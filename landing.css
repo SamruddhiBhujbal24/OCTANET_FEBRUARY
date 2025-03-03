@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Section */
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1520257328559-2062fc7de0b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: rgb(239, 238, 238);
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Box */
+.text .image {
+    display: block;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/026/904/832/small/ai-generated-ai-generative-solar-system-universe-galaxy-space-planets-poster-background-decoration-graphic-art-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Right Text */
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtext p {
+    font-size: 1.2vw;
+}
+
+/* Bottom Section */
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    flex-grow: 1;
+}
+
+/* Left Box */
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/20230828121214/Planets-in-our-Solar-System.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.b1 h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2vw;
+    padding: 15px;
+    color: rgb(21, 19, 1);
+}
+
+.b1 p {
+    font-weight: 300;
+    font-size: 1.1vw;
+    padding: 15px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Middle Box */
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Earth Section */
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://rukminim2.flixcart.com/image/850/1000/poster/f/d/j/earth-wallpaper-rwpstr1765-medium-original-imaehmk4qhctcjyf.jpeg?q=90&crop=false);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .up h1 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.b2 .up p {
+    font-size: 1.2vw;
+    color: rgb(145, 17, 107);
+    padding: 10px;
+}
+
+/* Mercury Section */
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/834/435/non_2x/beautiful-space-background-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .down h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.b2 .down p {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+/* Right Box */
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://as2.ftcdn.net/v2/jpg/06/87/62/87/1000_F_687628739_unPJtNd6LGLj24aGptNei35WHejjX60W.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.b3 .overlay p {
+    color: black;
+    font-size: 1.5vw;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 5vh;
+    }
+
+    .text h1 {
+        font-size: 6vw;
+    }
+
+    .text .image {
+        width: 300px;
+        height: 200px;
+        margin-top: 15px;
+    }
+
+    .rtext {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .b1, .b2, .b3 {
+        width: 100%;
+    }
+
+    .b1 h1, .b2 .up h1, .b2 .down h1 {
+        font-size: 4vw;
+    }
+
+    .b1 p, .b2 .up p, .b2 .down p {
+        font-size: 3vw;
+    }
+
+    .b3 .overlay p {
+        font-size: 3vw;
+    }
+}
